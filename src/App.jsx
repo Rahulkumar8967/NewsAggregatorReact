@@ -11,8 +11,9 @@ const App = () => {
     setLoading(true);
     setError(null);
     try {
+      // Use the provided API key
       let response = await fetch(
-        `https://newsapi.org/v2/everything?q=${query}&apiKey=2fa1039c7cbe45baa0f93b35233a6252`
+        `https://newsapi.org/v2/everything?q=${query}&apiKey=5be0f17f6a054919b39c0b8cde6be324`
       );
 
       if (!response.ok) {
